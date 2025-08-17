@@ -90,6 +90,159 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <!-- N2M -->
+              <tr onmouseout="N2M_stop()" onmouseover="N2M_start()" bgcolor="#ffffd0">
+                <td style="padding:10px;width:30%;vertical-align:middle">
+                  <div class="one" style="width:220px;height:123.75px;">
+                    <div class="two" id='N2M_image' style="width:220px;height:123.75px;">
+                      <video width=220px muted autoplay loop>
+                        <source src="data/N2M.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='data/N2M.png' width=220px>
+                  </div>
+                  <script type="text/javascript">
+                    function N2M_start() {
+                      document.getElementById('N2M_image').style.opacity = "1";
+                    }
+
+                    function N2M_stop() {
+                      document.getElementById('N2M_image').style.opacity = "0";
+                    }
+                    N2M_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:70%;vertical-align:middle">
+                  <a href="https://clvrai.github.io/N2M/">
+                    <span class="papertitle"> N2M: Bridging Navigation and Manipulation by Learning Initial Pose Preference from Rollout
+                    </span>
+                  </a>
+                  <br>
+                  <strong>Kaixin Chai</strong><sup>&dagger;</sup>,
+                  <a href="https://hjl1013.github.io/">Hyunjun Lee</a><sup>&dagger;</sup>,
+                  <a href="https://clvrai.com/web_lim/">Joseph J. Lim</a>*
+                  <br> (&dagger; means equal contribution) <br>
+                  <br>
+                  <em>RA-L</em>, Under Review
+                  <br>
+                  <a href="https://clvrai.github.io/N2M/">Website</a>
+                  <p></p>
+                  <p>
+                    Develop N2M, a transition module that optimizes robot positioning for mobile manipulation tasks, 
+                    substantially enhancing task success rates through ego-centric observation-based guidance that generalizes 
+                    across diverse environments with high data efficiency.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- Tracailer -->
+              <tr onmouseout="Tracailer_stop()" onmouseover="Tracailer_start()" bgcolor="#ffffd0">
+                <td style="padding:10px;width:30%;vertical-align:middle">
+                  <div class="one" style="width:220px;height:123.75px;">
+                    <div class="two" id='Tracailer_image' style="width:220px;height:123.75px;">
+                      <video width=220px muted autoplay loop>
+                        <source src="data/Tracailer.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='data/Tracailer.png' width=220px>
+                  </div>
+                  <script type="text/javascript">
+                    function Tracailer_start() {
+                      document.getElementById('Tracailer_image').style.opacity = "1";
+                    }
+
+                    function Tracailer_stop() {
+                      document.getElementById('Tracailer_image').style.opacity = "0";
+                    }
+                    Tracailer_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:70%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2502.19832">
+                    <span class="papertitle"> Tracailer: An Efficient Trajectory Planner for Tractor-Trailer Vehicles in Unstructured Environments
+                    </span>
+                  </a>
+                  <br>
+                  <a href="https://scholar.google.com/citations?user=xQujI5AAAAAJ&hl=en&oi=sra">Long Xu</a>,
+                  <strong>Kaixin Chai</strong>,
+                  <a href="">Boyuan An</a>,
+                  <a href="">Jiaxiang Gan</a>,
+                  <a href="">Qianhao Wang</a>,
+                  <a href="">Yuan Zhou</a>,
+                  <a href="">Xiaoying Li</a>,
+                  <a href="">Junxiao Lin</a>,
+                  <a href="">Zhichao Han</a>,
+                  <a href="">Chao Xu</a>,
+                  <a href="">Yanjun Cao</a>,
+                  <a href="http://zju-fast.com/fei-gao/">Fei Gao</a>*
+
+                  <br><br>
+                  <em>T-ASE</em>, Under Review
+                  <br>
+                  <a href="https://arxiv.org/abs/2502.19832">Paper</a>
+                  /
+                  <a href="data/Tracailer.mov">Video</a>
+                  <p></p>
+                  <p>
+                    Set up a mathematical model for ground effect prediction based on flown field simulation and
+                    experiments, making the drones fly safer and more stable near the ground.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- LEMON -->
+              <tr onmouseout="LEMON_stop()" onmouseover="LEMON_start()" bgcolor="#ffffd0">
+                <td style="padding:10px;width:30%;vertical-align:middle">
+                  <div class="one" style="width:220px;height:123.75px;">
+                    <div class="two" id='LEMON_image' style="width:220px;height:123.75px;">
+                      <video width=220px muted autoplay loop>
+                        <source src="data/LEMON.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='data/LEMON.png' width=220px>
+                  </div>
+                  <script type="text/javascript">
+                    function LEMON_start() {
+                      document.getElementById('LEMON_image').style.opacity = "1";
+                    }
+
+                    function LEMON_stop() {
+                      document.getElementById('LEMON_image').style.opacity = "0";
+                    }
+                    LEMON_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:70%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2505.10018">
+                    <span class="papertitle"> LEMON-Mapping: Loop-Enhanced Large-Scale Multi-Session Point Cloud Merging and Optimization for Globally Consistent Mapping
+                    </span>
+                  </a>
+                  <br>
+                  <a href="">Lijie Wang</a>,
+                  <a href="">Xiaoyi Zhong</a>,
+                  <a href="">Ziyi Xu</a>,
+                  <strong>Kaixin Chai</strong>,
+                  <a href="">Anke Zhao</a>,
+                  <a href="">Tianyu Zhao</a>,
+                  <a href="">Changjian Jiang</a>,
+                  <a href="">Qianhao Wang</a>,
+                  <a href="http://zju-fast.com/fei-gao/">Fei Gao</a>*
+
+                  <br><br>
+                  <em>T-RO</em>, Under Review
+                  <br>
+                  <a href="https://arxiv.org/abs/2505.10018">Paper</a>
+                  <p></p>
+                  <p>
+                    Develop LEMON-Mapping, a loop-enhanced framework for multi-robot point cloud fusion
+                     that resolves map inconsistencies through robust loop processing and spatial bundle adjustment.
+                  </p>
+                </td>
+              </tr>
+
               <!-- multi_slam -->
               <tr onmouseout="multi_slam_stop()" onmouseover="multi_slam_start()">
                 <td style="padding:10px;width:30%;vertical-align:middle">
@@ -203,7 +356,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:70%;vertical-align:middle">
-                  <a href="">
+                  <a href="https://ieeexplore.ieee.org/document/11081443">
                     <span class="papertitle"> Ground Effect-Aware Modeling and Control for Multicopters
                     </span>
                   </a>
@@ -213,10 +366,10 @@
                   <a href="https://scholar.google.com/citations?user=IOCO-YQAAAAJ&hl=en&oi=ao">Chao Xu</a>,
                   <a href="http://zju-fast.com/fei-gao/">Fei Gao</a>*
 
+                  <br><br>
+                  <em>T-MECH</em>, 2025
                   <br>
-                  <em>T-RO</em>, under review
-                  <br>
-                  <a href="data/GEffect.pdf">Paper</a>
+                  <a href="https://ieeexplore.ieee.org/document/11081443">Paper</a>
                   <p></p>
                   <p>
                     Set up a mathematical model for ground effect prediction based on flown field simulation and
@@ -302,12 +455,12 @@
                   <a href="https://scholar.google.com/citations?user=DdEPorEAAAAJ&hl=en&oi=ao">Qianhao Wang</a>,
                   <a href="https://scholar.google.com/citations?user=IOCO-YQAAAAJ&hl=en&oi=ao">Chao Xu</a>,
                   <a href="http://zju-fast.com/fei-gao/">Fei Gao</a>*
-                  <br> (&dagger; means equal contribution) <br>
+                  <br> (&dagger; means equal contribution) <br><br>
                   <em>IROS</em>, 2024
                   <br>
                   <a href="data/LF3PM_submission.mp4">video</a>
                   /
-                  <a href="data/LF3PM.pdf">Paper</a>
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10802556">Paper</a>
                   /
                   <a href="https://github.com/ZJU-FAST-Lab/LF-3PM">Code</a>
                   /
@@ -402,12 +555,12 @@
                   <a href="https://scholar.google.com/citations?user=Q44CBbgAAAAJ&hl=en&oi=ao">Yanjun Cao</a>,
                   <a href="http://zju-fast.com/fei-gao/">Fei Gao</a>*
 
-                  <br>
+                  <br><br>
                   <em>IROS</em>, 2023
                   <br>
                   <a href="https://www.bilibili.com/video/BV1B24y1G7h5/?spm_id_from=333.999.0.0">video</a>
                   /
-                  <a href="data/Uneven.pdf">Paper</a>
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10341558">Paper</a>
                   /
                   <a href="https://github.com/ZJU-FAST-Lab/uneven_planner">Code</a>
                   <p></p>
@@ -503,7 +656,7 @@
 
                   <em>Energy</em>
                   <br>
-                  <a href="data/DeepSea.pdf">Paper</a>
+                  <a href="https://www.sciencedirect.com/science/article/pii/S0360544224011149">Paper</a>
                   <p></p>
                   <p>
                     Demonstrate a novel energy generation system that maintains the turbine at optimal power conversion
@@ -599,7 +752,7 @@
                   <br>
                   <em>Renewable Energy</em>
                   <br>
-                  <a href="data/Savonius.pdf">Paper</a>
+                  <a href="https://www.sciencedirect.com/science/article/pii/S0960148122007030">Paper</a>
                   <p></p>
                   <p>
                     Analyze the cluster effect of Savonius wind turbines using the variable-speed control method.
