@@ -12,7 +12,7 @@
 
 <body>
   <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    style="width:100%;max-width:1100px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -25,28 +25,24 @@
                     Kaixin Chai
                   </p>
                   <p>
-                    Hi, I'm Kaixin. This website is a brief introduction about myself.
+                    Hi, I'm Kaixin. I graduated with a Bachelor's degree in Engineering from <a href="http://en.xjtu.edu.cn/">Xi'an Jiaotong University</a> in 2022. After graduation, I began my journey in robotics.
                   </p>
                   <p>
-                    I graduated with a Bachelor's degree in Engineering from <a href="http://en.xjtu.edu.cn/">Xi'an Jiaotong University</a> in 2022.
-                    After graduation, I began my <a href="data/profile/KaixinChai-bio.txt">journey</a> in robotics.
+                    Currently, I am working on enabling humanoid robots to acquire whole-body visuomotor skills under the guidance of <a href="https://zyliatzju.github.io/">Prof. Zhongyu Li</a>. My research focuses on data sources for skill training and the integration of whole-body controllers with high-level skill policies.
                   </p>
                   <p>
-                    <!-- Currently, I am a visiting student in <a href="https://www.clvrai.com/">CLVRLAB</a> at KAIST(Seoul) under the guidance of <a href="https://clvrai.com/web_lim/">Joseph J. Lim</a>, focusing on Whole-body Manipulation. I like the peaceful life and warm people here! -->
-                    Currently, I am a visiting student at the <a href="https://www.clvrai.com/">CLVR Lab</a> in Seoul, working under the supervision of <a href="https://clvrai.com/web_lim/">Joseph J. Lim</a>. I truly enjoy the peaceful environment and the kindness of the people here!
-                    <!-- After graduation, I worked at <a href="http://zju-fast.com/">FASTLAB</a> under the guidance of <a href="http://zju-fast.com/fei-gao/">Fei Gao</a>, focusing on classical robot planning and control research.
-                    Then, I work at <a href="https://metaslam.github.io/">GairLab</a> under the guidance of <a href="http://zju-fast.com/fei-gao/">Fei Gao</a>, where my job is to equip robots with basic skills and common sense so they can better assist people in their daily work. -->
+                    Before that, I worked on mobile manipulation with <a href="https://clvrai.com/web_lim/">Prof. Joseph J. Lim</a>, and robot perception and planning with <a href="https://scholar.google.com/citations?user=4RObDv0AAAAJ&hl">Prof. Fei Gao</a>. I am deeply grateful for the guidance from my mentors and the companionship from my labmates throughout my research journey.
                   </p>
                   <p style="text-align:center">
                     <a href="data/profile/KaixinChai-CV.pdf">CV</a> &nbsp;/&nbsp;
-                    <a href="data/profile/KaixinChai-bio.txt">Journey</a> &nbsp;/&nbsp;
+                    <!-- <a href="data/profile/KaixinChai-bio.txt">Journey</a> &nbsp;/&nbsp; -->
                     <a href="https://space.bilibili.com/336103007">Bilibili</a> &nbsp;/&nbsp;
                     <!-- <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp; -->
                     <a href="https://github.com/cckaixin">Github</a> &nbsp;/&nbsp;
-                    <a href="data/profile/KaixinChai-contact.txt">Contact</a>
+                    <a href="data/profile/KaixinChai-contact.txt">Email</a>
                   </p>
                 </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
+                <td style="padding:2.5%;width:30%;max-width:40%">
                   <a href="data/profile/KaixinChai-photo.jpg"><img
                       style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo"
                       src="data/profile/KaixinChai-photo.jpg" class="hoverZoomLink"></a>
@@ -89,18 +85,56 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <!-- R2S2R -->
+              <tr onmouseout="R2S2R_stop()" onmouseover="R2S2R_start()" bgcolor="#ffffd0">
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='R2S2R_image' >
+                      <video  muted autoplay loop>
+                        <source src="data/R2S2R.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='data/R2S2R.png' >
+                  </div>
+                  <script type="text/javascript">
+                    function R2S2R_start() {
+                      document.getElementById('R2S2R_image').style.opacity = "1";
+                    }
+
+                    function R2S2R_stop() {
+                      document.getElementById('R2S2R_image').style.opacity = "0";
+                    }
+                    R2S2R_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
+                  <a href="">
+                    <span class="papertitle"> Learning visuomotor whole-body skills from human video demonstrations
+                    </span>
+                  </a>
+                  <br>
+                  <strong>Kaixin Chai</strong>,
+                  <a href="https://zyliatzju.github.io/">Zhongyu Li</a>*
+                  <p></p>
+                  <p>
+                    Visual perception provides the foundation for humanoid robots to perform intricate interactions in complex environments.
+                    This project introduces a new paradigm to learn visuomotor whole-body skills for humanoid robots from human video demonstrations.
+                  </p>
+                </td>
+              </tr>
 
               <!-- N2M -->
               <tr onmouseout="N2M_stop()" onmouseover="N2M_start()" bgcolor="#ffffd0">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='N2M_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='N2M_image' >
+                      <video  muted autoplay loop>
                         <source src="data/N2M.mov" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/N2M.png' width=220px>
+                    <img src='data/N2M.png' >
                   </div>
                   <script type="text/javascript">
                     function N2M_start() {
@@ -113,7 +147,7 @@
                     N2M_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="https://clvrai.github.io/N2M/">
                     <span class="papertitle"> N2M: Bridging Navigation and Manipulation by Learning Initial Pose Preference from Rollout
                     </span>
@@ -123,8 +157,8 @@
                   <a href="https://hjl1013.github.io/">Hyunjun Lee</a><sup>&dagger;</sup>,
                   <a href="https://clvrai.com/web_lim/">Joseph J. Lim</a>*
                   <br> (&dagger; means equal contribution) <br>
-                  <br>
-                  <em>RA-L</em>, Under Review
+                  <!-- <br> -->
+                  <!-- <em>RA-L</em>, Under Review -->
                   <br>
                   <a href="https://clvrai.github.io/N2M/">Website</a>
                   /
@@ -140,15 +174,15 @@
 
               <!-- Tracailer -->
               <tr onmouseout="Tracailer_stop()" onmouseover="Tracailer_start()" bgcolor="#ffffd0">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='Tracailer_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='Tracailer_image' >
+                      <video  muted autoplay loop>
                         <source src="data/Tracailer.mov" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/Tracailer.png' width=220px>
+                    <img src='data/Tracailer.png' >
                   </div>
                   <script type="text/javascript">
                     function Tracailer_start() {
@@ -161,7 +195,7 @@
                     Tracailer_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="https://arxiv.org/abs/2502.19832">
                     <span class="papertitle"> Tracailer: An Efficient Trajectory Planner for Tractor-Trailer Vehicles in Unstructured Environments
                     </span>
@@ -199,15 +233,15 @@
 
               <!-- LEMON -->
               <tr onmouseout="LEMON_stop()" onmouseover="LEMON_start()" bgcolor="#ffffd0">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='LEMON_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='LEMON_image' >
+                      <video  muted autoplay loop>
                         <source src="data/LEMON.mov" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/LEMON.png' width=220px>
+                    <img src='data/LEMON.png' >
                   </div>
                   <script type="text/javascript">
                     function LEMON_start() {
@@ -220,7 +254,7 @@
                     LEMON_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="https://arxiv.org/abs/2505.10018">
                     <span class="papertitle"> LEMON-Mapping: Loop-Enhanced Large-Scale Multi-Session Point Cloud Merging and Optimization for Globally Consistent Mapping
                     </span>
@@ -250,15 +284,15 @@
 
               <!-- multi_slam -->
               <tr onmouseout="multi_slam_stop()" onmouseover="multi_slam_start()">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='multi_slam_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='multi_slam_image' >
+                      <video  muted autoplay loop>
                         <source src="data/multi_slam.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/multi_slam.png' width=220px>
+                    <img src='data/multi_slam.png' >
                   </div>
                   <script type="text/javascript">
                     function multi_slam_start() {
@@ -271,7 +305,7 @@
                     multi_slam_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="">
                     <span class="papertitle">Lightweight Multi-Robot LiDAR SLAM Framework with Loop Closure
                     </span>
@@ -294,15 +328,15 @@
 
               <!-- MobileManipulation -->
               <tr onmouseout="MobileManipulation_stop()" onmouseover="MobileManipulation_start()">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='MobileManipulation_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='MobileManipulation_image' >
+                      <video  muted autoplay loop>
                         <source src="data/MobileManipulation.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/MobileManipulation.jpg' width=220px>
+                    <img src='data/MobileManipulation.jpg' >
                   </div>
                   <script type="text/javascript">
                     function MobileManipulation_start() {
@@ -315,7 +349,7 @@
                     MobileManipulation_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="">
                     <span class="papertitle">Build Mobile Manipulation Hardware and Execute Long-Horizon Tasks
                     </span>
@@ -339,15 +373,15 @@
 
               <!-- GEffect -->
               <tr onmouseout="GEffect_stop()" onmouseover="GEffect_start()" bgcolor="#ffffd0">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='GEffect_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='GEffect_image' >
+                      <video  muted autoplay loop>
                         <source src="data/GEffect.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/GEffect.jpg' width=220px>
+                    <img src='data/GEffect.jpg' >
                   </div>
                   <script type="text/javascript">
                     function GEffect_start() {
@@ -360,7 +394,7 @@
                     GEffect_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="https://ieeexplore.ieee.org/document/11081443">
                     <span class="papertitle"> Ground Effect-Aware Modeling and Control for Multicopters
                     </span>
@@ -384,15 +418,15 @@
               </tr>
               <!-- 02 TargetFollowing -->
               <tr onmouseout="TargetFollowing_stop()" onmouseover="TargetFollowing_start()">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='TargetFollowing_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='TargetFollowing_image' >
+                      <video  muted autoplay loop>
                         <source src="data/TargetFollowing.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/TargetFollowing.jpg' width=220px>
+                    <img src='data/TargetFollowing.jpg' >
                   </div>
                   <script type="text/javascript">
                     function TargetFollowing_start() {
@@ -405,7 +439,7 @@
                     TargetFollowing_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="">
                     <span class="papertitle">Target Following Framework for Wheel-legged Robot
                     </span>
@@ -426,15 +460,15 @@
 
               <!-- LF3PM -->
               <tr onmouseout="LF3PM_stop()" onmouseover="LF3PM_start()" bgcolor="#ffffd0">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='LF3PM_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='LF3PM_image' >
+                      <video  muted autoplay loop>
                         <source src="data/LF3PM.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/LF3PM.jpg' width=220px>
+                    <img src='data/LF3PM.jpg' >
                   </div>
                   <script type="text/javascript">
                     function LF3PM_start() {
@@ -447,7 +481,7 @@
                     LF3PM_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="">
                     <span class="papertitle">LF-3PM: a LiDAR-based Framework for Perception-aware Planning with
                       Perturbation-induced Metric
@@ -482,15 +516,15 @@
 
               <!-- 04 egoPlanner -->
               <tr onmouseout="egoPlanner_stop()" onmouseover="egoPlanner_start()">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='egoPlanner_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='egoPlanner_image' >
+                      <video  muted autoplay loop>
                         <source src="data/egoPlanner.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/egoPlanner.jpg' width=220px>
+                    <img src='data/egoPlanner.jpg' >
                   </div>
                   <script type="text/javascript">
                     function egoPlanner_start() {
@@ -503,7 +537,7 @@
                     egoPlanner_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="">
                     <span class="papertitle"> Motion planning for Drones to Avoid Collisions in Complex Structures
                     </span>
@@ -525,15 +559,15 @@
 
               <!-- 3 Uneven -->
               <tr onmouseout="Uneven_stop()" onmouseover="Uneven_start()" bgcolor="#ffffd0">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='Uneven_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='Uneven_image' >
+                      <video  muted autoplay loop>
                         <source src="data/Uneven.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/Uneven.jpg' width=220px>
+                    <img src='data/Uneven.jpg' >
                   </div>
                   <script type="text/javascript">
                     function Uneven_start() {
@@ -546,7 +580,7 @@
                     Uneven_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="https://ieeexplore.ieee.org/abstract/document/10341558/">
                     <span class="papertitle"> An Efficient Trajectory Planner for Car-Like Robots on Uneven Terrain
                     </span>
@@ -578,15 +612,15 @@
 
               <!-- 03 HeliumAssisted -->
               <tr onmouseout="HeliumAssisted_stop()" onmouseover="HeliumAssisted_start()">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='HeliumAssisted_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='HeliumAssisted_image' >
+                      <video  muted autoplay loop>
                         <source src="data/HeliumAssisted.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/HeliumAssisted.jpg' width=220px>
+                    <img src='data/HeliumAssisted.jpg' >
                   </div>
                   <script type="text/javascript">
                     function HeliumAssisted_start() {
@@ -599,7 +633,7 @@
                     HeliumAssisted_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="">
                     <span class="papertitle"> Helium-Assisted Drone for Flight Time Enhancement
                     </span>
@@ -622,15 +656,15 @@
 
               <!-- DeepSea -->
               <tr onmouseout="DeepSea_stop()" onmouseover="DeepSea_start()" bgcolor="#ffffd0">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='DeepSea_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='DeepSea_image' >
+                      <video  muted autoplay loop>
                         <source src="data/DeepSea.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/DeepSea.jpg' width=220px>
+                    <img src='data/DeepSea.jpg' >
                   </div>
                   <script type="text/javascript">
                     function DeepSea_start() {
@@ -643,7 +677,7 @@
                     DeepSea_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="https://doi.org/10.1016/j.energy.2024.131341">
                     <span class="papertitle"> A novel full-process test bench for deep-sea in-situ power generation
                       systems
@@ -673,15 +707,15 @@
 
               <!-- 05 HeatLoading -->
               <tr onmouseout="HeatLoading_stop()" onmouseover="HeatLoading_start()">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='HeatLoading_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='HeatLoading_image' >
+                      <video  muted autoplay loop>
                         <source src="data/HeatLoading.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/HeatLoading.jpg' width=220px>
+                    <img src='data/HeatLoading.jpg' >
                   </div>
                   <script type="text/javascript">
                     function HeatLoading_start() {
@@ -694,7 +728,7 @@
                     HeatLoading_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="">
                     <span class="papertitle"> Design of An Energy-efficient Heat Loading System
                     </span>
@@ -719,15 +753,15 @@
 
               <!-- Savonius -->
               <tr onmouseout="Savonius_stop()" onmouseover="Savonius_start()" bgcolor="#ffffd0">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='Savonius_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='Savonius_image' >
+                      <video  muted autoplay loop>
                         <source src="data/Savonius.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/Savonius.jpg' width=220px>
+                    <img src='data/Savonius.jpg' >
                   </div>
                   <script type="text/javascript">
                     function Savonius_start() {
@@ -740,7 +774,7 @@
                     Savonius_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="https://doi.org/10.1016/j.renene.2022.05.062">
                     <span class="papertitle"> Power improvement of a cluster of three Savonius wind turbines using the
                       variable-speed control method
@@ -768,15 +802,15 @@
 
               <!-- 06 SurfaceDetection -->
               <tr onmouseout="SurfaceDetection_stop()" onmouseover="SurfaceDetection_start()">
-                <td style="padding:10px;width:30%;vertical-align:middle">
-                  <div class="one" style="width:220px;height:123.75px;">
-                    <div class="two" id='SurfaceDetection_image' style="width:220px;height:123.75px;">
-                      <video width=220px muted autoplay loop>
+                <td style="padding:10px;width:var(--image-column-width);vertical-align:middle">
+                  <div class="one" >
+                    <div class="two" id='SurfaceDetection_image' >
+                      <video  muted autoplay loop>
                         <source src="data/SurfaceDetection.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-                    <img src='data/SurfaceDetection.jpg' width=220px>
+                    <img src='data/SurfaceDetection.jpg' >
                   </div>
                   <script type="text/javascript">
                     function SurfaceDetection_start() {
@@ -789,7 +823,7 @@
                     SurfaceDetection_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
+                <td style="padding:20px;width:var(--text-column-width);vertical-align:top">
                   <a href="">
                     <span class="papertitle"> Automatic detection of Surface Defects in Metal Product
                     </span>
